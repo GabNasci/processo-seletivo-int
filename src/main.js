@@ -12,9 +12,10 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faList, faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons'
+import { faBriefcase, faBuilding, faCalculator, faCheck, faClock, faDna, faFileLines, faHelmetSafety, faLaptop, faLeaf, faList, faMagnifyingGlass, faPersonRunning, faRightFromBracket, faScaleBalanced, faUpload, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faCcMastercard, faCcVisa } from '@fortawesome/free-brands-svg-icons'
 
 /* add icons to the library */
-library.add(faMagnifyingGlass, faList)
+library.add(faMagnifyingGlass, faList, faLeaf, faHelmetSafety, faBuilding, faDna, faCalculator, faScaleBalanced, faLaptop, faPersonRunning, faRightFromBracket, faUser, faFileLines, faUpload, faCcVisa, faCcMastercard, faClock, faCheck, faBriefcase )
 
 createApp(App).component('font-awesome-icon', FontAwesomeIcon).use(bootstrap).mount('#app')
