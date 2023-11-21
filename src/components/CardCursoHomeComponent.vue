@@ -14,7 +14,10 @@
                         <p class="card-text m-0 d-none d-lg-block" style="color: var(--cinza-escuro);">
                             <strong>Modalidade:</strong> Presencial
                         </p>
-                        <a href="#" class="btn btn-primary fw-bold" style="background-color: var(--azul-claro);">Matricule-se</a>
+                        <router-link to="/curso">
+                            <a href="#" class="btn btn-primary fw-bold" style="background-color: var(--azul-claro);">Matricule-se</a>
+                        </router-link>
+                        
                       </div>
                       
                     </div>

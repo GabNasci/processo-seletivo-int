@@ -1,5 +1,5 @@
 <template>
-    <footer class="py-4 mt-5" style="background-color: var(--azul-claro); font-family: var(--fonte-principal); color: var(--branco);">
+    <footer class="py-4 mt-5" style="background-color: var(--azul-claro); color: var(--branco);">
         <section class="container">
             <section class="d-md-flex justify-content-between">
                 <div>

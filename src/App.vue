@@ -1,47 +1,10 @@
 <template>
-  <HeaderComponent>
-  </HeaderComponent>
-      <main class="d-flex flex-column gap-4">
-        <BannerPesquisaComponent>
-        </BannerPesquisaComponent>
+  <HeaderComponent />
+  
 
-        <section class="container">
-            <h3 class="fw-bold m-0">Todos os Cursos</h3>
-        </section>
-
-        <section class="container d-flex flex-wrap" style="font-family: var(--fonte-principal);">
-
-            <CardCursoHomeComponent>
-            </CardCursoHomeComponent>
-
-        </section>
-
-
-        <section class="container">
-            <h3 class="fw-bold m-0">Cursos Presenciais</h3>
-        </section>
-
-        <section class="carousel container d-flex gap-2" style="overflow-x: auto; overflow-y: hidden;">
-            <CardCursoComponent>
-            </CardCursoComponent>
-            
-
-        </section>
-        
-
-        <section class="container">
-            <h3 class="fw-bold m-0">Ensino a Distância</h3>
-        </section>
-
-        <section class="carousel container d-flex gap-2" style="overflow-x: auto; overflow-y: hidden;">
-          <CardCursoComponent>
-          </CardCursoComponent>
-            
-
-        </section>
-      </main>
-      <FooterComponent>
-      </FooterComponent>
+  <router-view />
+      
+  <FooterComponent />
   
   
 
@@ -50,20 +13,15 @@
 </template>
 
 <script>
-import BannerPesquisaComponent from './components/BannerPesquisaComponent.vue'
 import HeaderComponent from './components/HeaderComponent.vue'
-import CardCursoHomeComponent from './components/CardCursoHomeComponent.vue'
-import CardCursoComponent from './components/CardCursoComponent.vue'
 import FooterComponent from './components/FooterComponent.vue'
+
 
 
   export default {
     name: 'App',
     components: {
       HeaderComponent,
-      BannerPesquisaComponent,
-      CardCursoHomeComponent,
-      CardCursoComponent,
       FooterComponent
     }
   }
@@ -88,8 +46,9 @@ import FooterComponent from './components/FooterComponent.vue'
     --fonte-principal: 'Poppins'
   }
 
-  
-
+  body {
+    font-family: var(--fonte-principal);
+  }
 
  .carousel::-webkit-scrollbar {
   width: 0;
