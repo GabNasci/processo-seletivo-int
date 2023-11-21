@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import CourseView from '../views/CourseView.vue'
 import EnrollmentView from '../views/EnrollmentView.vue'
+import SearchView from '../views/SearchView.vue'
 
 const routes = [
   {
@@ -15,6 +16,10 @@ const routes = [
   {
     path: '/matricula',
     component: EnrollmentView
+  },
+  {
+    path: '/busca',
+    component: SearchView
   }
 ]
 

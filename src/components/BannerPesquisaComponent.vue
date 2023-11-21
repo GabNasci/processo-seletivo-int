@@ -88,7 +88,10 @@
                                 </div>
                                 <div class="modal-footer">
                                 <button type="button" class="btn btn-secondary fw-bold px-1" data-bs-dismiss="modal" style="background-color: var(--cinza-escuro);">Cancelar</button>
-                                <button type="button" class="btn btn-primary fw-bold px-4" style="background-color: var(--azul-claro);">Buscar</button>
+                                <router-link to="/busca">
+                                    <button type="button" class="btn btn-primary fw-bold px-4"  style="background-color: var(--azul-claro);">Buscar</button>
+                                </router-link>
+                                
                                 </div>
                             </div>
                             </div>
@@ -97,9 +100,12 @@
                     </div>
                     <div class="d-flex justify-content-between w-100 align-items-center">
                         <input type="text" name="search" id="search" class="busca_input border-0 w-100 px-2" placeholder="administração..." style="background: transparent; outline: none; color: var(--branco);">
-                        <button type="submit" class="btn p-0 text-light">
-                          <font-awesome-icon icon="fa-solid fa-magnifying-glass" rotation=90 class="p-2 m-0" />
-                        </button>
+                        <router-link to="/busca">
+                            <button type="submit" class="btn p-0 text-light">
+                                <font-awesome-icon icon="fa-solid fa-magnifying-glass" rotation=90 class="p-2 m-0" />
+                            </button>
+                        </router-link>
+                        
                         
                     </div>
                     
