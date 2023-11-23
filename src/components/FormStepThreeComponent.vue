@@ -27,8 +27,14 @@
                         <input class="form-control" type="file" id="document" accept=".pdf">
                       </div>
                     </div>
-                    <div class="card-footer d-flex justify-content-end">
-                        <button type="submit" class="btn btn-primary fw-bold px-4" style="background-color: var(--azul-claro);">Finalizar</button>
+                    <div class="card-footer d-flex justify-content-end gap-2">
+                        <router-link to="/matricula-passo-2">
+                            <button type="button" class="btn btn-secondary fw-bold px-2" style="background-color: var(--cinza-escuro);">Voltar</button>
+                        </router-link>
+                        <router-link to="/conta">
+                            <button type="submit" class="btn btn-primary fw-bold px-4" style="background-color: var(--azul-claro);">Finalizar</button>
+                        </router-link>
+                        
                     </div>
                    
                   </form>

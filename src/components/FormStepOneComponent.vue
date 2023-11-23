@@ -36,7 +36,9 @@
                           </div>
                     </div>
                     <div class="card-footer d-flex justify-content-end">
-                        <button type="submit" class="btn btn-primary fw-bold px-4" style="background-color: var(--azul-claro);">Próximo</button>
+                        <router-link to="/matricula-passo-2">
+                            <button type="" class="btn btn-primary fw-bold px-4" style="background-color: var(--azul-claro);">Próximo</button>
+                        </router-link>
                     </div>
                    
                   </form>

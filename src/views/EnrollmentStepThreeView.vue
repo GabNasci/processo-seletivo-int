@@ -1,7 +1,5 @@
 <template>
     <main class="d-flex flex-column gap-4">
-        <FormStepOneComponent />
-        <FormStepTwoComponent />
         <FormStepThreeComponent />
 
         <section class="container">
@@ -17,18 +15,17 @@
 
 <script>
     import CardCursoComponent from '../components/CardCursoComponent.vue'
-    import FormStepOneComponent from '@/components/FormStepOneComponent.vue';
-    import FormStepTwoComponent from '@/components/FormStepTwoComponent.vue';
     import FormStepThreeComponent from '@/components/FormStepThreeComponent.vue';
 
     export default {
-        name: 'EnrollmentView',
+        name: 'EnrollmentStepThreeView',
         components: {
             CardCursoComponent,
-            FormStepOneComponent,
-            FormStepTwoComponent,
             FormStepThreeComponent
-        }
+        },
+        mounted() {
+            window.scrollTo(0, 0);
+        },
     }
         
 

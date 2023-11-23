@@ -51,7 +51,10 @@
       CardCursoComponent,
       CardCursoHomeComponent,
       BannerPesquisaComponent
-    }
+    },
+    mounted() {
+      window.scrollTo(0, 0);
+    },
     
   }
 

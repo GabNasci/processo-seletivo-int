@@ -5,9 +5,12 @@
         <router-link to="/">
           <img src="../../public/LogoON.svg" alt="Logo ON">
         </router-link>
-        <button type="button" class="btn btn-outline-light rounded-pill ">
+        <router-link to="/conta">
+          <button type="button" class="btn btn-outline-light rounded-pill ">
           Acessar Conta
         </button>
+        </router-link>
+        
       </div>
     </nav>
   </header>

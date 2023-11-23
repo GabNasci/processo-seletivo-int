@@ -19,7 +19,7 @@
                 </div>
                 <h3 class=" d-flex gap-1 fs-5 text-end justify-content-end align-items-center m-0">10x de <strong class="fs-1">R$4.000,00</strong></h3>
                 <div class="d-flex justify-content-center py-2">
-                    <router-link to="/matricula">
+                    <router-link to="/matricula-passo-1">
                         <a href="#" class="btn btn-primary fw-bold fs-2" style="background-color: var(--azul-claro);">Matricule-se</a>
                     </router-link>
                 </div>
@@ -45,6 +45,9 @@
         name: 'CourseView',
         components: {
             CardCursoComponent
-        }
+        },
+        mounted() {
+            window.scrollTo(0, 0);
+        },
     }
 </script>

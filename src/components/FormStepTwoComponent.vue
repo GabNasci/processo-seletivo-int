@@ -36,8 +36,12 @@
                           </div>
                     </div>
                     <div class="card-footer d-flex justify-content-end gap-2">
-                        <button type="button" class="btn btn-secondary fw-bold px-2" style="background-color: var(--cinza-escuro);">Voltar</button>
-                        <button type="submit" class="btn btn-primary fw-bold px-4" style="background-color: var(--azul-claro);">Próximo</button>
+                        <router-link to="/matricula-passo-1">
+                            <button type="button" class="btn btn-secondary fw-bold px-2" style="background-color: var(--cinza-escuro);">Voltar</button>
+                        </router-link>
+                        <router-link to="/matricula-passo-3">
+                            <button type="submit" class="btn btn-primary fw-bold px-4" style="background-color: var(--azul-claro);">Próximo</button>
+                        </router-link>
                     </div>
                    
                   </form>
